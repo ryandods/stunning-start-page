@@ -86,6 +86,12 @@ h2 {
   font-family: "PT Sans Narrow", sans-serif;
 }
 
+section {
+  padding: 1.5rem;
+  border-bottom: 2px solid #afafaf;
+  border-top: 2px solid #afafaf;
+}
+
 section ul {
   margin: 0;
   padding: 0;
@@ -116,4 +122,33 @@ section h3 {
   font-family: "Pt Sans Narrow", sans-serif;
   font-size: 1.125rem;
   z-index: 1;
+}
+
+section li > img {
+  grid-column: 1/ -1;
+  grid-row: 1/ -1;
+}
+
+section div{
+  grid-area: top;
+  border-radius: 1em 0 0 1em;
+  padding: 0 .5em;
+  z-index: 1;
+  font-style: italic;
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-self: end;
+}
+
+
+section div img {
+  width: 1em;
+  height: 1em;
+  margin-right: .5em;
+}
+
+section div strong {
+  font-weight: normal;
 }
