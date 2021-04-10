@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: Gerogia, serif;
+  font-family: Georgia, serif;
   line-height: 1.5;
   color: #323232;
   background-color: #bebebe;
@@ -26,11 +26,10 @@ header {
   grid-template-columns: auto 10rem auto;
   grid-template-rows: auto 1.5rem;
   grid-template-areas:
-  "left center right"
-  ". center .";
+    "left center right"
+    ". center .";
   margin-bottom: 1.5rem;
 }
-
 
 header > h1 {
   grid-area: center;
@@ -76,8 +75,8 @@ main {
   padding: 0 1rem;
 }
 
-main p{
-  padding: 0 0 1.5rem;
+main p {
+  padding: 0 0 .5rem;
   font-size: 1.125rem;
 }
 
@@ -87,7 +86,7 @@ h2 {
 }
 
 section {
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   border-bottom: 2px solid #afafaf;
   border-top: 2px solid #afafaf;
 }
@@ -110,9 +109,9 @@ section ul li {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
-  "top"
-  "middle"
-  "bottom";
+    "top"
+    "middle"
+    "bottom";
 }
 
 section h3 {
@@ -120,8 +119,10 @@ section h3 {
   background-color: rgba(0, 0, 0, .1);
   text-align: center;
   font-family: "Pt Sans Narrow", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   z-index: 1;
+  padding: .5em;
+  margin-bottom: .5em;
 }
 
 section li > img {
@@ -129,19 +130,20 @@ section li > img {
   grid-row: 1/ -1;
 }
 
-section div{
+section div {
   grid-area: top;
   border-radius: 1em 0 0 1em;
   padding: 0 .5em;
   z-index: 1;
+  margin-top: .5em;
   font-style: italic;
+  background-color: rgba(0, 0, 0, .1);
 
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  justify-self: end;
+  justify-content: end;
 }
-
 
 section div img {
   width: 1em;
@@ -151,4 +153,16 @@ section div img {
 
 section div strong {
   font-weight: normal;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: .875rem;
+  align-items: center;
+}
+
+footer a {
+  color: #000;
 }
